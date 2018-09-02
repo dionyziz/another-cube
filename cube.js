@@ -118,7 +118,7 @@ function mapTexture(triangle, {tA, tB, tC}) {
         B = viewVertices[triangle[1]],
         C = viewVertices[triangle[2]]
 
-  // Computer projective matrix M such that the affine texture mapping is
+  // Compute projective matrix M such that the affine texture mapping is
   // correct:
   // M [[Au Av 1] [Bu Bv 1] [Cu Cv 1]]^T = [[Ax Ay 1] [Bx By 1] [Cx Cy 1]]^T
   const textureTriangle = math.transpose(
